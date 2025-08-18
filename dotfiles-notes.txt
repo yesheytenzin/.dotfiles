@@ -1,0 +1,25 @@
+# Dotfiles Management Notes
+
+## Add new config or changes
+config add <file-or-folder>
+# Example:
+config add .config/nvim
+
+## Commit changes
+config commit -m "Describe the change"
+
+## Push to GitHub
+config push
+
+## Pull latest changes on another machine
+config pull
+
+## Check status
+config status
+
+## Restore on a new machine
+git clone --bare https://github.com/yesheytenzin/.dotfiles.git $HOME/.dotfiles
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config checkout
+config config --local status.showUntrackedFiles no
+
