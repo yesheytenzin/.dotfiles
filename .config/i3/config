@@ -14,7 +14,7 @@ bindsym Shift+Print exec flameshot gui -c
 # Shortcut for Lockscreen
 bindsym $mod+x exec --no-startup-id ~/.config/i3/lock.sh
 exec --no-startup-id xautolock -time 15 -locker ~/.config/i3/lock.sh
-exec --no-startup-id i3-battery-popup
+exec --no-startup-id ~/script/i3-battery-popup
 
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --rate 60
 
