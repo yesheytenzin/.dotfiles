@@ -56,3 +56,7 @@ bindkey -s '\eh' "tmux-sessionizer -s 0\n"
 bindkey -s '\et' "tmux-sessionizer -s 1\n"
 bindkey -s '\en' "tmux-sessionizer -s 2\n"
 bindkey -s '\es' "tmux-sessionizer -s 3\n"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
